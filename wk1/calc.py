@@ -10,12 +10,12 @@ remainder = num1 % num2
 if operator == "+":
     print(" {} {} {} = {} ".format(num1, operator, num2, sum))
 elif operator == "-":
-    print(" {} {} {} = {} ".format(num1, operator num2, difference))
+    print(" {} {} {} = {} ".format(num1, operator, num2, difference))
 elif operator == "*":
-    print(" {} {} {} = {} ".format(num1, operator num2, multiplication))
+    print(" {} {} {} = {} ".format(num1, operator, num2, multiplication))
 elif operator == "/":
-    print(" {} {} {} = {} ".format(num1, operator num2, division))
+    print(" {} {} {} = {} ".format(num1, operator, num2, division))
 elif operator == "%":
-    print(" {} {} {} = {} ".format(num1, operator num2, remainder))
+    print(" {} {} {} = {} ".format(num1, operator, num2, remainder))
 else:
     print("invalid operator")
