@@ -8,6 +8,11 @@ def fib(n):
         result = fib(n - 1) + fib(n - 2)
         return result
 
-print(fib(3))
-print(fib(6))
-print(fib(9))
+numWanted = int(input("how many Fibonacci values should be displayed: "))
+i = 1
+while i < numWanted:
+    fibValue = fib(i)
+    print(fibValue)
+    i +=1
+
+print("All done! ")
