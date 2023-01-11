@@ -4,11 +4,11 @@ class Animal:
         self.appearance = appearance
         self.blooded = blooded
 
-    @property
+    @property #getter method
     def birthType(self):
         return self.__birthType
 
-    @birthType.setter
+    @birthType.setter #setter
     def birthType(self, birthType):
         self.__birthType = birthType
 
@@ -28,11 +28,12 @@ class Animal:
     def blooded(self, blooded):
         self.__blooded = blooded
 
-    def __str__(self):
+    def __str__(self):  #magic string method
         return "A {} is {} it has {} it is {}".format(type(self).__name__, self.birthType, self.appearance, self.blooded)
 
 class Mammal(Animal):
     def __init__(self, birthType="born alive", appearance="hair or fur", blooded= "warm blooded", nurseYoung=True):
+
         Animal.__init__(self, birthType, appearance, blooded)
         self.__nurseYoung = nurseYoung
         
@@ -57,6 +58,8 @@ class Reptile(Animal):
                 for i in args:
                     sum += i
                 return sum
+def getBirthType(theObject): #polymorphism
+    print("the {} is {}".format(type(theObject).__name__, theObject.birthType))
 
 def main():
     animal1 = Animal("born alive")
@@ -70,6 +73,8 @@ def main():
     reptile1 = Reptile()
 
     print(reptile1)
-    
+    getBirthType(mammal1)
+    getBirthType(reptile1)
+
 main()
             
