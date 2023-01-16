@@ -28,7 +28,7 @@ class Calculator:
         Button(width=11, height=4, text='-', relief='flat', bg='white',command= lambda:self.show("-")).place(x=270, y=200)
         Button(width=11, height=4, text='/', relief='flat', bg='white',command= lambda:self.show("/")).place(x=270, y=50)
         Button(width=11, height=4, text='*', relief='flat', bg='white',command= lambda:self.show("*")).place(x=270, y=125)
-        Button(width=11, height=4, text='=', relief='flat', bg='lightblue',command= self.solve).place(x=270, y=350)
+        Button(width=11, height=4, text='=', relief='flat', bg='brown',command= self.solve).place(x=270, y=350)
         Button(width=11, height=4, text='C', relief='flat', bg='white',command= self.clear).place(x=0, y=350)
 
     def show(self, value):
