@@ -4,11 +4,11 @@ import numpy as np
 img = cv.imread('Resources/Photos/cats.jpg')
 
 blank = np.zeros(img.shape[:2], dtype='uint8')
-cv,imshow('blank', blank)
+cv.imshow('blank', blank)
 # cv.imshow('Cat', img)
 # convert to greyscale
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-# cv.imshow('gray', gray)
+cv.imshow('gray', gray)
 # blur the img 
 blur = cv.GaussianBlur(gray, (5, 5), cv.BORDER_DEFAULT)
 

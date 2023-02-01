@@ -22,6 +22,9 @@ textfield.place(x=20, y=20)
 textfield.focus()
 
 search_icon = PhotoImage(file="searcgi.png")
-myImageIcon=Button(image=search_icon, borderwidth=0, cursor="hand2")
+myImageIcon=Button(image=search_icon, borderwidth=0, cursor="hand2", bg="#404040")
 myImageIcon.place(x=400, y=34)
+
+#log0
+
 root.mainloop()
