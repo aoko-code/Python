@@ -10,7 +10,7 @@ def XOR(val1, val2):
 def shiftleft(val, num):
     return val << num
 def shiftright(val, num):
-    return val >> num
+    return val > num
 def bit(val, idx):
     mask = 1 << idx
     return bool(val & 1)
@@ -23,7 +23,7 @@ def zerobit (val, idx):
 def listbits(val):
     num = len(bin(val)) - 2
     result = []
-    for i in range(num):
-        result.append(1 if bit(val, i) else 0)
+    for n in range(num):
+        result.append(1 if bit(val, n) else 0)
     return list(reversed(result))
 
