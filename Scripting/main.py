@@ -2,7 +2,7 @@ import os
 #getting the name of the user
 name = os.getlogin()
 print(name)
-#processes
+#processesgit
 gid = os.getppid()
 print(gid)
 #current working dir
