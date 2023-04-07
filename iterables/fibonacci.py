@@ -14,7 +14,7 @@ class FibGenerator:
         self.first = self.second
         self.second = fibNum
         return fibNum
-
+#create object
 fibSeq = FibGenerator()
 for i in range(10):
     print("Fib: ", next(fibSeq))
